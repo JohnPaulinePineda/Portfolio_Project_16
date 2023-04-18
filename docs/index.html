@@ -21695,6 +21695,16 @@ feature importance in terms of this metric are as follows:<br />
 <div id="absolute-t-test-statistic-ats" class="section level3">
 <h3>1.5.2 Absolute T-Test Statistic (ATS)</h3>
 <div class="line-block"><br />
+<a href="https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents">T-Test
+Statistic</a> define the probability of obtaining an effect during
+hypothesis testing, at least as large as the one actually observed in
+the sample data, specifically assuming that the null hypothesis is true.
+The test of hypothesis involved applying T-Test to evaluate for any
+significant differences in the means of the numeric response between two
+categorical predictors. The presence of low T-Test p-values indicate the
+univariate association between the numeric predictors and the numeric
+response.<br />
+<br />
 <strong>[A]</strong> The absolute T-test statistic was obtained using
 the
 <mark style="background-color: #CCECFF"><strong>stats</strong></mark>
@@ -21784,6 +21794,16 @@ feature importance in terms of this metric are as follows:<br />
 <div id="maximal-information-coefficient-mic" class="section level3">
 <h3>1.5.3 Maximal Information Coefficient (MIC)</h3>
 <div class="line-block"><br />
+<a href="https://www.science.org/doi/10.1126/science.1205438">Maximal
+Information Coefficient</a> is an information theory-based measure of
+two-variable dependence through the computation of the mutual
+information normalized by the minimum joint entropy. It evaluates the
+strength of linear or non-linear association using binning as a means to
+apply mutual information between continuous random variables and
+selecting the maximum over many possible grids. The presence of high
+coefficient values indicate the univariate association between the
+numeric predictors and the numeric response.<br />
+<br />
 <strong>[A]</strong> The maximal information coefficient was obtained
 using the
 <mark style="background-color: #CCECFF"><strong>minerva</strong></mark>
@@ -21850,6 +21870,22 @@ feature importance in terms of this metric are as follows:<br />
 <div id="relief-values-rv" class="section level3">
 <h3>1.5.4 Relief Values (RV)</h3>
 <div class="line-block"><br />
+<a href="https://link.springer.com/article/10.1023/A:1025667309714">Relief
+Values</a> are heuristic measures which estimate the quality of
+variables according to how well their values compare to instances that
+are near to each other, but are efficient in detecting contextual
+information even with strong dependencies between attributes. Random
+instances and the corresponding K-nearest instances are selected, with
+the the weights for the different prediction values, different
+attributes and different prediction consolidated. The rank of the
+instance in a sequence of instances ordered by the distance is taken
+into account based on a a user-defined parameter controlling the
+influence of the distance. The contributions of each K-nearest instances
+are normalized by dividing the results with the sum of all K
+contributions. The presence of high relief values indicate the
+univariate association between the numeric predictors and the numeric
+response.<br />
+<br />
 <strong>[A]</strong> The relief values statistic was obtained using the
 <mark style="background-color: #CCECFF"><strong>CORElearn</strong></mark>
 package. High raw values of the metric indicate that the numeric
@@ -23533,6 +23569,16 @@ Volcano Plots in R</a> by Samuel David Gamboa-Tuz<br />
 <strong>[Article]</strong> <a href="https://www.r-bloggers.com/2014/05/using-volcano-plots-in-r-to-visualize-microarray-and-rna-seq-results/">Using
 Volcano Plots in R to Visualize Microarray and RNA-seq Results</a> by
 Stephen Turner<br />
+<strong>[Publication]</strong> <a href="https://www.science.org/doi/10.1126/science.1205438">Detecting
+Novel Associations in Large Data Sets</a> by David Reshef, Yakir Reshef,
+Hilary Finucane, Sharon Grossman, Gilean Mcvean, Peter Turnbaugh, Eric
+Lander, Michael Mitzenmacher and Pardis Sabeti (Science)<br />
+<strong>[Publication]</strong> <a href="https://link.springer.com/article/10.1023/A:1025667309714">Theoretical
+and Empirical Analysis of ReliefF and RReliefF</a> by Marko
+Robnik-Šikonja and Igor Kononenko (Machine Learning)<br />
+<strong>[Publication]</strong> <a href="https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents">First
+(?) Occurrence of Common Terms in Probability and Statistics-A Second
+List, with Corrections</a> by H David (The American Statistician)<br />
 <strong>[Course]</strong> <a href="https://online.stat.psu.edu/stat508/">Applied Data Mining and
 Statistical Learning</a> by Penn State Eberly College of Science<br />
 <strong>[Course]</strong> <a href="https://online.stat.psu.edu/stat501/">Regression Methods</a> by
