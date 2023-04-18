@@ -1328,6 +1328,8 @@ dotplot(Predictor ~ ROC_AUC | Metric,
 
 ###  1.5.2 Absolute T-Test Statistic (ATS)
 |
+| [T-Test Statistic](https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents) define the probability of obtaining an effect during hypothesis testing, at least as large as the one actually observed in the sample data, specifically assuming that the null hypothesis is true. The test of hypothesis involved applying T-Test to evaluate for any significant differences in the means of the numeric response between two categorical predictors. The presence of low T-Test p-values indicate the univariate association between the numeric predictors and the numeric response.
+|
 | **[A]** The absolute T-test statistic was obtained using the <mark style="background-color: #CCECFF">**stats**</mark> package. High absolute values of the metric indicate that the numeric predictors were associated with the factor response.
 |
 | **[B]** The numeric predictors which demonstrated the best feature importance in terms of this metric are as follows:
@@ -1379,6 +1381,8 @@ dotplot(Predictor ~ ATS | Metric,
 
 ###  1.5.3 Maximal Information Coefficient (MIC)
 |
+| [Maximal Information Coefficient](https://www.science.org/doi/10.1126/science.1205438) is an information theory-based measure of two-variable dependence through the computation of the mutual information normalized by the minimum joint entropy. It evaluates the strength of linear or non-linear association using binning as a means to apply mutual information between continuous random variables and selecting the maximum over many possible grids. The presence of high coefficient values indicate the univariate association between the numeric predictors and the numeric response.
+|
 | **[A]** The maximal information coefficient was obtained using the <mark style="background-color: #CCECFF">**minerva**</mark> package. High raw values of the metric indicate that the numeric predictors were associated with the factor response.
 |
 | **[B]** The numeric predictors which demonstrated the best feature importance in terms of this metric are as follows:
@@ -1423,6 +1427,8 @@ dotplot(Predictor ~ MIC | Metric,
 ```
 
 ###  1.5.4 Relief Values (RV)
+|
+| [Relief Values](https://link.springer.com/article/10.1023/A:1025667309714) are heuristic measures which estimate the quality of variables according to how well their values compare to instances that are near to each other, but are efficient in detecting contextual information even with strong dependencies between attributes. Random instances and the corresponding K-nearest instances are selected, with the the weights for the different prediction values, different attributes and different prediction consolidated. The rank of the instance in a sequence of instances ordered by the distance is taken into account based on a a user-defined parameter controlling the influence of the distance. The contributions of each K-nearest instances are normalized by dividing the results with the sum of all K contributions. The presence of high relief values indicate the univariate association between the numeric predictors and the numeric response.
 |
 | **[A]** The relief values statistic was obtained using the <mark style="background-color: #CCECFF">**CORElearn**</mark> package. High raw values of the metric indicate that the numeric predictors were associated with the factor response.
 |
