@@ -1328,7 +1328,7 @@ dotplot(Predictor ~ ROC_AUC | Metric,
 
 ###  1.5.2 Absolute T-Test Statistic (ATS)
 |
-| [T-Test Statistic](https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents) define the probability of obtaining an effect during hypothesis testing, at least as large as the one actually observed in the sample data, specifically assuming that the null hypothesis is true. The test of hypothesis involved applying T-Test to evaluate for any significant differences in the means of the numeric response between two categorical predictors. The presence of low T-Test p-values indicate the univariate association between the numeric predictors and the numeric response.
+| [T-Test Statistic](https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents), as derived from implementing a T-Test, measures the magnitude of the difference between the two group means being compared and is used to estimate the likelihood that this difference exists purely by chance. The test of hypothesis involved applying T-Test to evaluate for any significant differences in the means of the numeric predictors between the two classes of the categorical response. The presence of high T-Test statistic indicates the univariate discrimination of the categorical response by the numeric predictors.
 |
 | **[A]** The absolute T-test statistic was obtained using the <mark style="background-color: #CCECFF">**stats**</mark> package. High absolute values of the metric indicate that the numeric predictors were associated with the factor response.
 |

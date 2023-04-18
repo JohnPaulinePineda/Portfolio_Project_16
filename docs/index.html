@@ -21696,14 +21696,15 @@ feature importance in terms of this metric are as follows:<br />
 <h3>1.5.2 Absolute T-Test Statistic (ATS)</h3>
 <div class="line-block"><br />
 <a href="https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents">T-Test
-Statistic</a> define the probability of obtaining an effect during
-hypothesis testing, at least as large as the one actually observed in
-the sample data, specifically assuming that the null hypothesis is true.
-The test of hypothesis involved applying T-Test to evaluate for any
-significant differences in the means of the numeric response between two
-categorical predictors. The presence of low T-Test p-values indicate the
-univariate association between the numeric predictors and the numeric
-response.<br />
+Statistic</a>, as derived from implementing a T-Test, measures the
+magnitude of the difference between the two group means being compared
+and is used to estimate the likelihood that this difference exists
+purely by chance. The test of hypothesis involved applying T-Test to
+evaluate for any significant differences in the means of the numeric
+predictors between the two classes of the categorical response. The
+presence of high T-Test statistic indicates the univariate
+discrimination of the categorical response by the numeric
+predictors.<br />
 <br />
 <strong>[A]</strong> The absolute T-test statistic was obtained using
 the
