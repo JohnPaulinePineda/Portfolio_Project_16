@@ -21815,7 +21815,7 @@ strength of linear or non-linear association using binning as a means to
 apply mutual information between continuous random variables and
 selecting the maximum over many possible grids. The presence of high
 coefficient values indicate the univariate association between the
-numeric predictors and the numeric response.<br />
+numeric predictors and the categorical response.<br />
 <br />
 <strong>[A]</strong> The maximal information coefficient was obtained
 using the
@@ -21887,16 +21887,13 @@ feature importance in terms of this metric are as follows:<br />
 Values</a> are heuristic measures which estimate the quality of
 variables according to how well their values compare to instances that
 are near to each other, but are efficient in detecting contextual
-information even with strong dependencies between attributes. Random
-instances and the corresponding K-nearest instances are selected, with
-the the weights for the different prediction values, different
-attributes and different prediction consolidated. The rank of the
-instance in a sequence of instances ordered by the distance is taken
-into account based on a a user-defined parameter controlling the
-influence of the distance. The contributions of each K-nearest instances
-are normalized by dividing the results with the sum of all K
-contributions. The presence of high relief values indicate the
-univariate association between the numeric predictors and the numeric
+information even with strong dependencies between attributes. Given a
+randomly selected instance, its two nearest neighbors are selected - one
+from the same class (called nearest hit) and the other from a different
+class (called nearest miss). The quality for an attribute is estimated
+depending on the difference in probabilities obtained using the hits and
+misses. The presence of high relief values indicate the univariate
+association between the numeric predictors and the categorical
 response.<br />
 <br />
 <strong>[A]</strong> The relief values statistic was obtained using the
@@ -21997,6 +21994,17 @@ feature importance in terms of this metric are as follows:<br />
 <div id="volcano-plot---fishers-exact-test-vp_f" class="section level3">
 <h3>1.5.5 Volcano Plot - Fisher’s Exact Test (VP_F)</h3>
 <div class="line-block"><br />
+<a href="https://www.semanticscholar.org/paper/019%3A-On-the-Interpretation-of-x2-from-Contingency-Fisher/2dfebf541541451c4200161214b4c6912ff3d4c2">Fisher’s
+Exact Test</a> tests contingency tables for homogeneity of proportion
+and determines if there are nonrandom associations between two
+categorical variables. To compute the P-value of the test, the tables
+must be ordered by some criterion that measures dependence, and those
+tables that represent equal or greater deviation from independence than
+the observed table are the ones whose probabilities are added together.
+The presence of low Fisher’s exact test p-values indicate the univariate
+association between the categorical predictors and the categorical
+response.<br />
+<br />
 <strong>[A]</strong> The volcano plot - Fisher’s Exact Test p-value was
 obtained using the
 <mark style="background-color: #CCECFF"><strong>stats</strong></mark>
@@ -23594,6 +23602,9 @@ Robnik-Šikonja and Igor Kononenko (Machine Learning) |
 <strong>[Publication]</strong> <a href="https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents">First
 (?) Occurrence of Common Terms in Probability and Statistics-A Second
 List, with Corrections</a> by H David (The American Statistician) |
+<strong>[Publication]</strong> <a href="https://www.semanticscholar.org/paper/019%3A-On-the-Interpretation-of-x2-from-Contingency-Fisher/2dfebf541541451c4200161214b4c6912ff3d4c2">On
+the Interpretation of x2 from Contingency Tables, and the Calculation of
+P</a> by Ronald Fisher (Journal of the Royal Statistical Society) |
 <strong>[Course]</strong> <a href="https://online.stat.psu.edu/stat508/">Applied Data Mining and
 Statistical Learning</a> by Penn State Eberly College of Science |
 <strong>[Course]</strong> <a href="https://online.stat.psu.edu/stat501/">Regression Methods</a> by
