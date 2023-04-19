@@ -1832,8 +1832,7 @@ grid.arrange(FET_P.Value_Plot,
 | **[Article]** [Fisher’s Exact Test](https://www.statstest.com/fischers-exact-test/) by Stats Test Team
 | **[Article]** [Visualization of Volcano Plots in R](https://sdgamboa.github.io/post/2020_volcano/) by Samuel David Gamboa-Tuz
 | **[Article]** [Using Volcano Plots in R to Visualize Microarray and RNA-seq Results](https://www.r-bloggers.com/2014/05/using-volcano-plots-in-r-to-visualize-microarray-and-rna-seq-results/) by Stephen Turner
-| **[Publication]** [ Signal Detection Theory and ROC Analysis](https://www.semanticscholar.org/paper/Signal-detection-theory-and-ROC-analysis-Egan/a2cf3479c3b5c96b8ee8c353876fba5048a39fb7) by J Egan ( Series in
-Cognition and Perception)
+| **[Publication]** [ Signal Detection Theory and ROC Analysis](https://www.semanticscholar.org/paper/Signal-detection-theory-and-ROC-analysis-Egan/a2cf3479c3b5c96b8ee8c353876fba5048a39fb7) by J Egan ( Series in Cognition and Perception)
 | **[Publication]** [Detecting Novel Associations in Large Data Sets](https://www.science.org/doi/10.1126/science.1205438) by David Reshef, Yakir Reshef, Hilary Finucane, Sharon Grossman, Gilean Mcvean, Peter Turnbaugh, Eric Lander, Michael Mitzenmacher and Pardis Sabeti (Science)
 | **[Publication]** [Theoretical and Empirical Analysis of ReliefF and RReliefF](https://link.springer.com/article/10.1023/A:1025667309714) by Marko Robnik-Šikonja and Igor Kononenko (Machine Learning)
 | **[Publication]** [First (?) Occurrence of Common Terms in Probability and Statistics-A Second List, with Corrections](https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents) by H David (The American Statistician)
