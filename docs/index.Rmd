@@ -1271,6 +1271,8 @@ EDA.Bar.Source.FactorVar.Prop.Group1 <- rbind(EDA.PropTable.Function(names(EDA.B
 
 ###  1.5.1 Receiver Operating Characteristic Curve - Area Under Curve (ROC_AUC)
 |
+| [Receiver Operating Characteristic Curve - Area Under Curve](https://www.semanticscholar.org/paper/Signal-detection-theory-and-ROC-analysis-Egan/a2cf3479c3b5c96b8ee8c353876fba5048a39fb7) involves a  plot that demonstrates the performance of a classification prediction model to discriminate between two levels of a categorical response when compared to a gold standard, using the true positive rate (or Sensitivity) and the false positive rate (or 1-Specificity) for a range of threshold settings. The area under the ROC curve measures its discrimination power which is the ability of the model to distinguish between two classes or groups. The presence of high ROC Curve AUC indicates the univariate discrimination of the categorical response by the numeric predictors.
+|
 | **[A]** The receiver operating characteristic curve - area under curve metric  was obtained using the <mark style="background-color: #CCECFF">**caret**</mark> package. High raw values of the metric indicate that the numeric predictors were associated with the factor response.
 |
 | **[B]** The numeric predictors which demonstrated the best feature importance in terms of this metric are as follows:
