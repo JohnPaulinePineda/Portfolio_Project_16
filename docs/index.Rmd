@@ -1499,7 +1499,7 @@ dotplot(Predictor ~ RV | Metric,
 |      **[C.4]** <span style="color: #FF0000">FP076</span> = 2.08379
 |      **[C.5]** <span style="color: #FF0000">FP184</span> = 1.98819
 |
-```{r section_1.5.6, warning=FALSE, message=FALSE}
+```{r section_1.5.5, warning=FALSE, message=FALSE}
 ##################################
 # Filtering in the factor predictors
 # with the numeric response variable
@@ -1589,6 +1589,8 @@ dotplot(Predictor ~ AbsoluteLogOddsRatio | Metric,
 
 ###  1.5.6 Volcano Plot - Gain Ratio (VP_G)
 |
+| [Gain Ratio](https://www.semanticscholar.org/paper/Induction-of-Decision-Trees-Quinlan/bcee7c85d237b79491a773ef51e746bbbcf48e35) based off of the information gain which determine the best features that render maximum information about a class, attempts to lessen its bias from predictors with many levels by introducing a normalizing term called the intrinsic information defined as the entropy of sub-dataset proportions. The presence of high gain ratio indicate the univariate association between the categorical predictors and the categorical response.
+|
 | **[A]** The volcano plot - gain ratio was obtained using the <mark style="background-color: #CCECFF">**COREtrain**</mark> package. High raw values of the metric, and the absolute log odds ratio indicate that the factor predictors were associated with the factor response.
 |
 | **[B]** The factor predictors which demonstrated the best feature importance in terms of the gain ratio are as follows:
@@ -1605,7 +1607,7 @@ dotplot(Predictor ~ AbsoluteLogOddsRatio | Metric,
 |      **[C.4]** <span style="color: #FF0000">FP076</span> = 2.08379
 |      **[C.5]** <span style="color: #FF0000">FP184</span> = 1.98819
 |
-```{r section_1.5.7, warning=FALSE, message=FALSE}
+```{r section_1.5.6, warning=FALSE, message=FALSE}
 ##################################
 # Obtaining the gain ratio
 ##################################
@@ -1836,6 +1838,7 @@ Cognition and Perception)
 | **[Publication]** [Theoretical and Empirical Analysis of ReliefF and RReliefF](https://link.springer.com/article/10.1023/A:1025667309714) by Marko Robnik-Šikonja and Igor Kononenko (Machine Learning)
 | **[Publication]** [First (?) Occurrence of Common Terms in Probability and Statistics-A Second List, with Corrections](https://www.jstor.org/stable/2685564?seq=1#page_scan_tab_contents) by H David (The American Statistician)
 | **[Publication]** [On the Interpretation of x2 from Contingency Tables, and the Calculation of P](https://www.semanticscholar.org/paper/019%3A-On-the-Interpretation-of-x2-from-Contingency-Fisher/2dfebf541541451c4200161214b4c6912ff3d4c2) by Ronald Fisher (Journal of the Royal Statistical Society)
+| **[Publication]** [Induction of Decision Trees](https://www.semanticscholar.org/paper/Induction-of-Decision-Trees-Quinlan/bcee7c85d237b79491a773ef51e746bbbcf48e35) by John Quinlan (Computer Science)
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 | **[Course]** [Regression Methods](https://online.stat.psu.edu/stat501/) by Penn State Eberly College of Science
 | **[Course]** [Applied Regression Analysis](https://online.stat.psu.edu/stat462/) by Penn State Eberly College of Science
