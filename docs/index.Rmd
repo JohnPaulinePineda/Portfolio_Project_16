@@ -1589,7 +1589,7 @@ dotplot(Predictor ~ AbsoluteLogOddsRatio | Metric,
 
 ###  1.5.6 Volcano Plot - Gain Ratio (VP_G)
 |
-| [Gain Ratio](https://www.semanticscholar.org/paper/Induction-of-Decision-Trees-Quinlan/bcee7c85d237b79491a773ef51e746bbbcf48e35) based off of the information gain which determine the best features that render maximum information about a class, attempts to lessen its bias from predictors with many levels by introducing a normalizing term called the intrinsic information defined as the entropy of sub-dataset proportions. The presence of high gain ratio indicate the univariate association between the categorical predictors and the categorical response.
+| [Gain Ratio](https://www.semanticscholar.org/paper/Induction-of-Decision-Trees-Quinlan/bcee7c85d237b79491a773ef51e746bbbcf48e35), based off of the information gain which determines the best features that render maximum information about a class, attempts to lessen its bias from predictors with many levels by introducing a normalizing term called the intrinsic information defined as the entropy of sub-dataset proportions. The presence of high gain ratio values indicate the univariate association between the categorical predictors and the categorical response.
 |
 | **[A]** The volcano plot - gain ratio was obtained using the <mark style="background-color: #CCECFF">**COREtrain**</mark> package. High raw values of the metric, and the absolute log odds ratio indicate that the factor predictors were associated with the factor response.
 |
