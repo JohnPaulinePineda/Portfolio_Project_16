@@ -507,10 +507,17 @@ References</strong></a></li>
 <div id="table-of-contents" class="section level1">
 <h1><strong>1. Table of Contents</strong></h1>
 <div class="line-block"><br />
-This document presents a non-exhaustive list of feature importance
+This project explores different model-independent feature importance
 metrics for predictors with dichotomous categorical responses using
 various helpful packages in
-<mark style="background-color: #CCECFF"><strong>R</strong></mark>.<br />
+<mark style="background-color: #CCECFF"><strong>R</strong></mark>.
+Metrics applied in the analysis to evaluate feature importance for
+numeric predictors included the <strong>Receiver Operating
+Characteristic (ROC) Curve Area Under the Curve (AUC)</strong>,
+<strong>Absolute T-Test Statistic</strong>, <strong>Maximal Information
+Coefficient</strong> and <strong>Relief Values</strong>, while those for
+factor predictors included the <strong>Volcano Plot Using Fisher’s Exact
+Test</strong> and <strong>Volcano Plot Using Gain Ratio</strong>.<br />
 <br />
 Model-independent feature importance determines the degree of
 relationship, usefulness and contribution of the independent variables
@@ -23372,17 +23379,19 @@ follows:<br />
 <strong>[A]</strong> The model-independent feature importance for all
 numeric predictors were evaluated in terms of the following
 metrics:<br />
-     <strong>[A.1]</strong> ROC_AUC: Receiver Operating Characteristic
-Curve - Area Under Curve
+     <strong>[A.1]</strong> <strong>ROC_AUC: Receiver Operating
+Characteristic Curve - Area Under Curve</strong>
 (<mark style="background-color: #CCECFF"><strong>caret</strong></mark>
 package)<br />
-     <strong>[A.2]</strong> ATS : Absolute T-Test Statistic
+     <strong>[A.2]</strong> <strong>ATS : Absolute T-Test
+Statistic</strong>
 (<mark style="background-color: #CCECFF"><strong>stats</strong></mark>
 package)<br />
-     <strong>[A.3]</strong> MIC: Maximal Information Coefficient
+     <strong>[A.3]</strong> <strong>MIC: Maximal Information
+Coefficient</strong>
 (<mark style="background-color: #CCECFF"><strong>minerva</strong></mark>
 package)<br />
-     <strong>[A.4]</strong> RV: Relief Values
+     <strong>[A.4]</strong> <strong>RV: Relief Values</strong>
 (<mark style="background-color: #CCECFF"><strong>CORElearn</strong></mark>
 package)<br />
 <br />
@@ -23398,10 +23407,12 @@ follows:<br />
 <strong>[C]</strong> The model-independent feature importance for all
 factor predictors were evaluated in terms of the following
 metrics:<br />
-     <strong>[C.1]</strong> VP_F: Volcano Plot - Fisher’s Exact Test
+     <strong>[C.1]</strong> <strong>VP_F: Volcano Plot - Fisher’s Exact
+Test</strong>
 (<mark style="background-color: #CCECFF"><strong>stats</strong></mark>
 package)<br />
-     <strong>[C.2]</strong> VP_G: Volcano Plot - Gain Ratio
+     <strong>[C.2]</strong> <strong>VP_G: Volcano Plot - Gain
+Ratio</strong>
 (<mark style="background-color: #CCECFF"><strong>CORElearn</strong></mark>
 package)<br />
 <br />
