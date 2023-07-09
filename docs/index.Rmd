@@ -1,5 +1,5 @@
 ---
-title: "R : Evaluating Model-Independent Feature Importance for Predictors with Dichotomous Categorical Responses"
+title: "Feature Selection : Evaluating Model-Independent Feature Importance for Predictors with Dichotomous Categorical Responses"
 author: "John Pauline Pineda"
 date: "December 14, 2022"
 output: 
