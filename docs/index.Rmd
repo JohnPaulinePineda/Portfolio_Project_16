@@ -1334,9 +1334,9 @@ EDA.Bar.Source.FactorVar.Prop.Group1 <- rbind(EDA.PropTable.Function(names(EDA.B
 
 ## 1.5 Model-Independent Feature Importance Metrics
 
-###  1.5.1 Receiver Operating Characteristic Curve - Area Under Curve (ROC_AUC)
+###  1.5.1 Area Under The Receiver Operating Characteristic Curve (AUROC)
 |
-| [Receiver Operating Characteristic Curve - Area Under Curve](https://www.semanticscholar.org/paper/Signal-detection-theory-and-ROC-analysis-Egan/a2cf3479c3b5c96b8ee8c353876fba5048a39fb7) involves a  plot that demonstrates the performance of a classification prediction model to discriminate between two levels of a categorical response when compared to a gold standard, using the true positive rate (or Sensitivity) and the false positive rate (or 1-Specificity) for a range of threshold settings. The area under the ROC curve measures its discrimination power which is the ability of the model to distinguish between two classes or groups. The presence of high ROC Curve AUC indicates the univariate discrimination of the categorical response by the numeric predictors.
+| [Area Under The Receiver Operating Characteristic Curve](https://www.semanticscholar.org/paper/Signal-detection-theory-and-ROC-analysis-Egan/a2cf3479c3b5c96b8ee8c353876fba5048a39fb7) involves a  plot that demonstrates the performance of a classification prediction model to discriminate between two levels of a categorical response when compared to a gold standard, using the true positive rate (or Sensitivity) and the false positive rate (or 1-Specificity) for a range of threshold settings. The area under the ROC curve measures its discrimination power which is the ability of the model to distinguish between two classes or groups. The presence of high AUROC indicates the univariate discrimination of the categorical response by the numeric predictors.
 |
 | **[A]** The receiver operating characteristic curve - area under curve metric  was obtained using the <mark style="background-color: #CCECFF">**caret**</mark> package. High raw values of the metric indicate that the numeric predictors were associated with the factor response.
 |
@@ -1364,25 +1364,25 @@ summary(PMA_PreModelling_Train_Numeric)
 ##################################
 # Obtaining the ROC AUC
 ##################################
-ROC_AUC <- filterVarImp(x = PMA_PreModelling_Train_Numeric[, 2:ncol(PMA_PreModelling_Train_Numeric)],
+AUROC <- filterVarImp(x = PMA_PreModelling_Train_Numeric[, 2:ncol(PMA_PreModelling_Train_Numeric)],
                         y = PMA_PreModelling_Train_Numeric$Log_Solubility_Class)
 
 ##################################
 # Formulating the summary table
 ##################################
-ROC_AUC_Summary <- ROC_AUC 
+AUROC_Summary <- AUROC 
 
-ROC_AUC_Summary$Predictor <- rownames(ROC_AUC)
-names(ROC_AUC_Summary)[1] <- "ROC_AUC"
-ROC_AUC_Summary$Metric <- rep("ROC_AUC",nrow(ROC_AUC))
+AUROC_Summary$Predictor <- rownames(AUROC)
+names(AUROC_Summary)[1] <- "AUROC"
+AUROC_Summary$Metric <- rep("AUROC",nrow(AUROC))
 
-ROC_AUC_Summary
+AUROC_Summary
 
 ##################################
 # Exploring predictor performance
 ##################################
-dotplot(Predictor ~ ROC_AUC | Metric, 
-        ROC_AUC_Summary,
+dotplot(Predictor ~ AUROC | Metric, 
+        AUROC_Summary,
         origin = 0,
         type = c("p", "h"),
         pch = 16,
@@ -1790,7 +1790,7 @@ dotplot(Predictor ~ AbsoluteLogOddsRatio | Metric,
 ## 1.6 Evaluation Summary
 |
 | **[A]** The model-independent feature importance for all numeric predictors were evaluated in terms of the following metrics:
-|      **[A.1]** **ROC_AUC: Receiver Operating Characteristic Curve - Area Under Curve** (<mark style="background-color: #CCECFF">**caret**</mark> package)
+|      **[A.1]** **AUROC: Receiver Operating Characteristic Curve - Area Under Curve** (<mark style="background-color: #CCECFF">**caret**</mark> package)
 |      **[A.2]** **ATS : Absolute T-Test Statistic** (<mark style="background-color: #CCECFF">**stats**</mark> package)
 |      **[A.3]** **MIC: Maximal Information Coefficient** (<mark style="background-color: #CCECFF">**minerva**</mark> package) 
 |      **[A.4]** **RV: Relief Values** (<mark style="background-color: #CCECFF">**CORElearn**</mark> package) 
@@ -1822,12 +1822,12 @@ dotplot(Predictor ~ AbsoluteLogOddsRatio | Metric,
 # Consolidating all performance metrics
 # for the numeric predictors
 ##################################
-NumericPredictor_Metrics <- cbind(ROC_AUC_Summary$ROC_AUC,
+NumericPredictor_Metrics <- cbind(AUROC_Summary$AUROC,
                                   ATS_Summary$ATS,
                                   MIC_Summary$MIC,
                                   RV_Summary$RV)
 
-colnames(NumericPredictor_Metrics) <- c("ROC_AUC",
+colnames(NumericPredictor_Metrics) <- c("AUROC",
                                         "ATS",
                                         "MIC",
                                         "RV")
@@ -1850,7 +1850,7 @@ splom(~NumericPredictor_Metrics[,c(1:4)],
       pch = 16,
       cex = 2,
       alpha = 0.45,
-      varnames = c("ROC_AUC", "ATS", "MIC", "RV"),
+      varnames = c("AUROC", "ATS", "MIC", "RV"),
       auto.key = list(points = TRUE, space = "top"),
       main = "Feature Importance Comparison for Numeric Predictors",
       xlab = "Scatterplot Matrix of Feature Importance Metrics")
