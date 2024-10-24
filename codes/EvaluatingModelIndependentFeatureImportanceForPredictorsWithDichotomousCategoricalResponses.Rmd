@@ -1098,7 +1098,7 @@ EDA.Bar.Source.FactorVar.Prop.Group5 <- rbind(EDA.PropTable.Function(names(EDA.B
                                       stack=TRUE,
                                       ylab = "Proportion",
                                       xlab = "Structure",
-                                      auto.key = list(adj = 1),
+                                      auto.key = list(adj=1, space="top", columns=2),
                                       layout=(c(9,5))))
 
 
@@ -1150,7 +1150,7 @@ EDA.Bar.Source.FactorVar.Prop.Group4 <- rbind(EDA.PropTable.Function(names(EDA.B
                                       stack=TRUE,
                                       ylab = "Proportion",
                                       xlab = "Structure",
-                                      auto.key = list(adj = 1),
+                                      auto.key = list(adj=1, space="top", columns=2),
                                       layout=(c(9,5))))
 
 
@@ -1202,7 +1202,7 @@ EDA.Bar.Source.FactorVar.Prop.Group3 <- rbind(EDA.PropTable.Function(names(EDA.B
                                       stack=TRUE,
                                       ylab = "Proportion",
                                       xlab = "Structure",
-                                      auto.key = list(adj = 1),
+                                      auto.key = list(adj=1, space="top", columns=2),
                                       layout=(c(9,5))))
 
 
@@ -1254,7 +1254,7 @@ EDA.Bar.Source.FactorVar.Prop.Group2 <- rbind(EDA.PropTable.Function(names(EDA.B
                                       stack=TRUE,
                                       ylab = "Proportion",
                                       xlab = "Structure",
-                                      auto.key = list(adj = 1),
+                                      auto.key = list(adj=1, space="top", columns=2),
                                       layout=(c(9,5))))
 
 
@@ -1306,7 +1306,7 @@ EDA.Bar.Source.FactorVar.Prop.Group1 <- rbind(EDA.PropTable.Function(names(EDA.B
                                       stack=TRUE,
                                       ylab = "Proportion",
                                       xlab = "Structure",
-                                      auto.key = list(adj = 1),
+                                      auto.key = list(adj=1, space="top", columns=2),
                                       layout=(c(9,5))))
 
 
@@ -1833,7 +1833,7 @@ splom(~NumericPredictor_Metrics[,c(1:4)],
       cex = 2,
       alpha = 0.45,
       varnames = c("AUROC", "ATS", "MIC", "RV"),
-      auto.key = list(points = TRUE, space = "top"),
+      auto.key = list(points=TRUE, space="top", columns=2),
       main = "Feature Importance Comparison for Numeric Predictors",
       xlab = "Scatterplot Matrix of Feature Importance Metrics")
 
@@ -1850,7 +1850,7 @@ FET_P.Value_Plot <- xyplot(NegativeLog10_FET_P.Value ~ LogOddsRatio,
        pch = 16,
        cex = 2,
        alpha = 0.45,
-       auto.key = list(points = TRUE, space = "top"),
+       auto.key = list(points=TRUE, space="top", columns=2),
        main = "Feature Importance Comparison for Factor Predictors")
 
 Gain_Plot <- xyplot(Gain ~ LogOddsRatio,
@@ -1862,7 +1862,7 @@ Gain_Plot <- xyplot(Gain ~ LogOddsRatio,
        pch = 16,
        cex = 2,
        alpha = 0.45,
-       auto.key = list(points = TRUE, space = "top"),
+       auto.key = list(points=TRUE, space="top", columns=2),
        main = "Feature Importance Comparison for Factor Predictors")
 
 grid.arrange(FET_P.Value_Plot, 
